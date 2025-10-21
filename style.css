@@ -1,103 +1,119 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 .main {
-    background-color: aqua;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: aqua;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .outer-box {
-    border: 2px solid black;
-    width: 70vw;
-    height: 59%;
-    overflow: hidden;
-    border-radius: 10px;
+  border: 2px solid black;
+  width: 70vw;
+  height: 65%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
 }
 
 .navbar {
-    background-color: #55a555;
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: space-evenly;
-
+  background-color: #55a555;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
 }
 
 .value-box {
-    background-color: white;
-    width: 30px;
-    text-align: center;
-    font-weight: 700;
-}
-
-.mr-2 h3,
-p {
-    margin-top: 20px;
-    display: inline-block;
+  background-color: white;
+  width: 40px;
+  text-align: center;
+  font-weight: 700;
+  color: black;
+  border-radius: 4px;
 }
 
 .content {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-
-
+  background-color: white;
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 8px;
 }
 
 .bubble {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    width: 30px;
-    border: 1.5px solid black;
-    border-radius: 50%;
-    background-color: #55a555;
-    margin: 5px 5px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #55a555;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .bubble:hover {
-    background-color: #40a140;
-    cursor: pointer;
+  background-color: #3f8b3f;
+  transform: scale(1.1);
 }
 
 .gameOver {
-    text-align: center;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* border: 2p   x solid; */
-    /* align-items: center; */
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    /* height: 80%; */
+  text-align: center;
+  width: 100%;
 }
 
 .gameOver button {
-    width: 16%;
-    height: 40px;
+  width: 150px;
+  height: 45px;
+  font-size: 1rem;
+  background-color: #55a555;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.gameOver button:hover {
+  background-color: #3f8b3f;
 }
 
 .Starting {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .starting-text {
-    width: 16%;
-    height: 40px;
+  width: 150px;
+  height: 45px;
+  font-size: 1rem;
+  background-color: #55a555;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.starting-text:hover {
+  background-color: #3f8b3f;
+}
+
 }
